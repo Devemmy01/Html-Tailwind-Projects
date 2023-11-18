@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .home h1{
+        font-family: 'Bellota', cursive;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(1, 82, 119, 0.616);
+    height: 10px;
+}

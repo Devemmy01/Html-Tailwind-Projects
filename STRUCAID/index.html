@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRUCAID</title>
+    <link rel="shortcut icon" href="Img/Logo.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="bg-brand">
+    <!-- Navbar -->
+    <nav class="relative nav -mt-8 container mx-auto p-6">
+        <!-- Flex container -->
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="pt-2 flex">
+                <img src="Img/Logo.png" class="w-20" alt="">
+            </div>
+            <!-- Menu items -->
+            <div class="space-x-7 md:flex">
+                <a href="About.html" class="cursor-pointer hover:text-blue-500 transition-all font-semibold text-1xl text-boneWhite md:text-1xl">About us</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <!-- Flex container -->
+        <div class="container flex mt-20 items-center mx-auto space-y-0 md:space-y-0 lg:mt-40">
+            <!-- Left item -->
+            <div class="home flex flex-col mx-auto space-y-12">
+                <h1 class="homeh1 text-boneWhite max-w-md text-4xl font-bold text-center tracking-widest md:text-5xl"><hr style="height: 2px; width: 100%; background: teal; margin: 20px 0; ">COMING SOON<hr style="height: 2px; width: 100%; background: teal; margin: 20px 0;"></h1>
+                <h1 class="homeh1 text-boneWhite max-w-md text-4xl font-bold text-center tracking-widest md:text-5xl">
+                    Build with Ease!
+                </h1>
+                <p class="homeh2 max-w-md text-center text-boneWhite">
+                    Building your dream home has not been easier? You are one click away. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- Flex container -->
+        <div id="home" class="home3 container flex flex-col mt-16 items-center px-6 mx-auto space-y-0 md:space-y-0 md:flex-row md:mt-32">
+            <!-- Left item -->
+            <div class="w-full max-w-xs mx-auto">
+                <form name="submit-to-google-sheet" class=" rounded  pt-6 pb-8 mb-4">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" name="Name" for="name">
+                        Name
+                        </label>
+                        <input type="text" required name="Name" class="name shadow bg-transparent appearance-none border rounded h-14 w-full py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:shadow-outline" placeholder="Full Name" id="" >
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" name="Email" for="email">
+                        Email
+                        </label>
+                        <input type="email" required class="email shadow bg-transparent appearance-none border rounded h-14 w-full py-2 px-3 text-gray-300 mb-3 leading-tight focus:outline-none focus:shadow-outline" name="Email" placeholder="Email" id="">
+                    </div>
+                    <div class="items-center justify-between">
+                        <input type="submit" name="" id="" value="Join waiting list" class="cursor-pointer w-full text-center border text-gray-800 bg-boneWhite transition-all hover:text-boneWhite hover:bg-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" >
+                        <p class="inline-block align-baseline font-bold text-sm text-boneWhite">
+                            *Don't worry we will not spam you :)                      
+                        </p>
+                    </div>
+                </form>
+                <p id="msg" class="text-green-600 text-2xl font-bold"></p>
+            </div>
+              
+            <!-- Image -->
+            <div class="md:w-1/2">
+                <img src="Img/constructiin.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="flex items-center justify-between container mx-auto mt-16 px-10 md:mt-32">
+            <div class="socials">
+                <p class="text-boneWhite text-xl">Follow us on social for updates</p>
+                <div class="flex flex-col md:flex md:flex-row md:space-x-7">
+                    <a href="https://instagram.com/ourstrucaid?igshid=ZGUzMzM3NWJiOQ=="><i class="bx bxl-instagram text-gray-400 text-4xl cursor-pointer transition-all hover:text-gray-500"></i></a>
+                    <a href="https://www.linkedin.com/company/ourstrucaid/"><i class="bx bxl-linkedin text-gray-400 text-4xl cursor-pointer transition-all hover:text-gray-500"></i></a>
+                    <a href="https://twitter.com/ourstrucaid?t=qcbo8Hq4hGn_jUxonamJhw&s=09"><i class="bx bxl-twitter text-gray-400 text-4xl cursor-pointer transition-all hover:text-gray-500"></i></a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 md:flex md:flex-row md:space-x-7">
+                <p class="underline decoration-blue-500 text-boneWhite transition-all font-semibold">Fast delivery</p>
+                <p class="underline decoration-blue-500 text-boneWhite transition-all font-semibold">Competitive price</p>
+                <p class="underline decoration-blue-500 text-boneWhite transition-all font-semibold">Competence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <p class="text-center text-gray-500 text-xs">
+        &copy;2023 Devemmy25. All rights reserved.
+    </p> -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="index.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbybuTuM03HH56EYx_hrvRikYHRKXSAnx5QO_L4mOVRwwbKoQKYh39BMDrb5BWI6SnQG/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                alert("You have sucessfully joined the waiting list!")
+                // msg.innerHTML = "You have sucessfully joined the waiting list!"
+                // setTimeout(function(){
+                //     msg.innerHTML = ""
+                // },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
