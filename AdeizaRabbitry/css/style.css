@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --header-height: 3rem;
+    --first-color: #ff0511;
+    --first-color-alt: #f33d46;
+    --title-color: #393939;
+    --text-color: rgb(14, 13, 13);
+    --text-color-light:#A6A6A6;
+    --body-color:rgb(219, 228, 236);
+    --container-color:#ffffff;
+    --z-fixed:100;
+}
+
+body.dark-theme{
+    --title-color: #f1f3f2;
+    --text-color:#c7d1cc;
+    --body-color:#1d2521;
+    --h1-color: lightseagreen;
+    --container-color:#27302c;
+    --box-shadow:0 0 1.3rem rgb(146, 144, 144);
+}
+
+.change-theme{
+    position: absolute;
+    right: 0rem;
+    top: 1.5rem;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+body{
+    background-color: var(--body-color);
+}
+
+
+html{
+    font-size: 10px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 1.9rem;
+}
+h2{
+    color: var(--text-color);
+}
+p{
+    font-size: 1.2rem;
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--body-color);
+    position: fixed;
+    top: 0;
+    z-index: 333;
+}
+.logo{
+    display: flex;
+}
+
+.logo h2{
+    padding-top: 3.7%;
+    color: var(--h1-color);
+}
+.logo span{
+    color: var(--h1-color);
+}
+.mobile-nav{
+    display: none;
+}
+.container{
+    width: 96%;
+    max-width: 117rem;
+    margin: 0 auto;
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+
+}
+.navbar h1{
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul a{
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+}
+.navbar ul a:hover{
+    color: white;
+    background: lightseagreen;
+}
+.navbar .menu{
+    display: none;
+}
+.nav__menu{
+    margin-right: 2rem;
+}
+.bx-moon{
+    margin-right: 1.5rem;
+    color: var(--text-color);
+}
+
+.hero{
+    max-width: 114rem;
+    height: 40rem;
+    background: url(../pic/rabbit-skin-infection.jpg) no-repeat center / cover;
+    margin: 5rem auto;
+}
+main{
+    width: 100%;
+    max-width: 88rem;
+    background-color: white;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    margin-top: -15rem;
+    background-color: var(--body-color);
+}
+main h2{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+main .profile-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+main .profile-container .profile .text{
+    margin: 0.1rem;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+} 
+.profile .text h3{
+    text-transform: uppercase;
+}
+.btn{
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    padding: 0.3rem 1.5rem;
+    background-color: lightseagreen;
+    border-radius: 0.2rem;
+}
+main p{
+    color: grey;
+    margin: 1rem 0;
+    font-size: 15px;
+    line-height: 30px;
+}
+main .content .content-img-container{
+    width: 100%;
+    height: 35rem;
+    background: url(../pic/ra.jpg) no-repeat center / cover;
+}
+blockquote{
+    font-size: 1.4rem;
+    padding: 1rem 2.8rem;
+    line-height: 1.6;
+    font-weight: 300;
+    box-shadow: inset 0.5rem 0 0 lightseagreen;
+    background: rgb(187, 181, 181);
+}
+.article{
+    width: 100%;
+    background-color: var(--body-color);
+    margin: 5rem 0;
+    padding: 5rem 0;
+}
+.article .article-heading{
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.article-heading h5{
+    font-size: 10rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    position: relative;
+    color: rgba(180, 176, 176, 0.753);
+}
+.article-heading h6{
+    font-size: 4rem;
+    font-weight: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem auto;
+    gap: 3rem;
+}
+.cards .card-container{
+    cursor: pointer ;
+    transition: all o.4s ease;
+    width: 200%;
+}
+.cards .card-container .img-holder{
+    max-width: 100%;
+    height: 40rem;
+    background: url(../pic/rabbit-skin-infection.jpg) no-repeat center / cover;
+    position: relative;
+}
+.cards .card-container .img-holder1{
+    max-width: 100%;
+    height: 40rem;
+    background: url(../pic/b.jpg) no-repeat center / cover;
+    position: relative;
+}
+.cards .card-container .img-holder2{
+    max-width: 100%;
+    height: 40rem;
+    background: url(../pic/hay.jpg) no-repeat center / cover;
+    position: relative;
+}
+.cards .card-container .img-holder3{
+    max-width: 100%;
+    height: 40rem;
+    background: url(../pic/poo.jpg) no-repeat center / cover;
+    position: relative;
+}
+.cards .card-container .img-holder4{
+    max-width: 100%;
+    height: 40rem;
+    background: url(../pic/rt.jpg) no-repeat center / cover;
+    position: relative;
+}
+.cards .card-container .img-holder5{
+    max-width: 100%;
+    height: 40rem;
+    background: url(../pic/bloat.jpg) no-repeat center / cover;
+    position: relative;
+}
+.cards .card-container.two .img-holder{
+    background: url(../pic/Rabbit-hay-feeder.jpg) no-repeat center / cover;
+}
+.cards .card-container.three .img-holder{
+    background: url(../pic/poo.jpg) no-repeat center / cover;
+}
+
+.cards .card-container:hover{
+    transform: translateY(-1rem);
+    transition: 0.4s ease-in-out;
+}
+.cards .card-container .card-text{
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 0 0.3rem grey;
+}
+.cards .card-container .card-text h4{
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight:900;
+}
+.cards .card-container .card-text p{
+    font-size: 15px;
+}
+.cards .card-container .card-text a{
+    color: blue;
+}
+.article .button{
+    margin: 0 auto;
+    text-align: center;
+}
+.article .btn{
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: none;
+    padding: 0.5rem 3rem;
+    color: white;
+}
+footer{
+    background-color: black;
+    padding: 3rem 0;
+}
+.icons{
+    text-align: center;
+}
+.icons .social i{
+    font-size: 3rem;
+    color: grey;
+    padding: 1rem;
+    transition: all 0.4s ease;
+}
+.icons .social i:hover{
+    color: white;
+    cursor: pointer;
+}
+.icons .copyright p{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: white;
+    margin: 2rem 0;
+}
+.news p{
+    color: lightseagreen;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+.news h2{
+    text-align: center;
+}
+
+.news form{
+    background: #fff;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+.news form input{
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+    height: 70px;
+    width: 400px;
+    font-size: 16px;
+}
+.news form button{
+    background: lightseagreen;
+    border: none;
+    outline: none;
+    height: 70px;
+    width: 60px;
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+.news form button:hover{
+    background: black;
+    transition: 0.5s;
+}
+
+
+@media (max-width:768px){
+    main{
+        padding: 3rem;
+        margin: 0;
+    }
+    .navbar ul{
+        display: block;
+    }
+    .navbar .menu{
+        display: block;
+        cursor: pointer;
+        color: var(--text-color);
+    }
+    
+    .nav__menu{
+        position: fixed;
+        top: 100%;
+        left: 0;
+        height: 35vh;
+        width: 100%;
+        padding: 1.5rem 0 1rem;
+        text-align: center;
+        background-color: var(--body-color);
+        transition: .4s;
+        box-shadow: 0 4px 4px rgba(0,0,0,.1);
+        border-radius: 0 0 1rem 1rem;
+        z-index: var(--z-fixed);
+    }
+     
+    
+
+    .navbar ul a{
+        display: inline-block;
+        padding: 2rem;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        width: 100%;
+        color: var(--text-color);
+        transition: all 0.4s ease;
+    }
+
+    .navbar ul a:hover{
+        color: white;
+        background-color: lightseagreen;
+    }
+
+    .mobile-nav.active{
+        display: block;
+    }
+    .navbar .menu i{
+        font-size: 2.5rem;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .cards{
+        justify-content: space-between;
+        margin: 4rem auto;
+        gap: 3rem;
+    }
+    .cards .card-container{
+        cursor: pointer ;
+        transition: all o.4s ease;
+        width: 100%;
+    }
+    .show-menu{
+        top: 5rem;
+    }
+    .bx-moon{
+        padding-right: 5rem;
+        padding-top: 2.5rem;
+    }
+}
+@media (max-width:567px){
+    .article-heading h5{
+        font-size: 6rem;
+    }
+    .news form input{
+        width: 300px;
+    }
+    .navbar ul a{
+        padding: 1.5rem;
+        
+    }
+    
+}

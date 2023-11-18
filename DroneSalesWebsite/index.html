@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.37.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone</title>
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> 
+    <link rel="shortcut icon" href="img/dronelogo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    
+    
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="img/dronelogg.png" alt="">
+                Drone
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#popular" class="nav__link">Popular</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Featured</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-4-line"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="shape shape__big"></div>
+            <div class="shape shape__small"></div>
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Select Your Favourite Drone
+                    </h1>
+
+                    <h2 class="home__subtitle">
+                        DJI DRONES
+                    </h2>
+
+                </div>
+
+                <img src="img/droneg10.gif" alt="" class="home__img">
+
+                <div class="home__drone">
+                    <div class="home__drone-data">
+                        <div class="home__drone-icon">
+                            <i class="ri-temp-cold-line"></i>
+                        </div>
+                        <h2 class="home__drone-number">20 <sup>0</sup></h2>
+                        <h3 class="home__drone-name">TEMPERATURE</h3>
+                    </div>
+
+                    <div class="home__drone-data">
+                        <div class="home__drone-icon">
+                            <i class="ri-dashboard-3-line"></i>
+                        </div>
+                        <h2 class="home__drone-number">500</h2>
+                        <h3 class="home__drone-name">KM/HR</h3>
+                    </div>
+
+                    <div class="home__drone-data">
+                        <div class="home__drone-icon">
+                            <i class="ri-flashlight-fill"></i>
+                        </div>
+                        <h2 class="home__drone-number">95%</h2>
+                        <h3 class="home__drone-name">BATTERY</h3>
+                    </div>
+                </div>
+
+
+                <a href="#about"  class="home__button"><i class="ri-mouse-line"></i></a>
+        
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__group">
+                    <img src="img/dronewp.jpg" class="about__img" alt="">
+
+                   
+                </div>
+
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        A great way to fly    
+                    </h2>
+
+                    <p class="about__description">
+                        Lorem ipsum dolor sit amet consectetur, 
+                        adipisicing elit. Quas natus quos asperiores 
+                        ipsum, quae minus numquam adipisci, aliquam 
+                        placeat perferendis quisquam, obcaecati 
+                        corporis! Facere consequatur doloremque 
+                        possimus omnis earum! Libero.
+                    </p>
+
+                    <a href="#" class="button">Discover more</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular section" id="popular">
+            <h2 class="section__title">
+                Select Your Best DJI Drone
+            </h2>
+
+            <div class="popular__container container swiper">
+                <div class="swiper-wrapper">
+                    <article class="popular__droned swiper-slide">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="popular__title">DJI</h1>
+                        <h3 class="popular__subtitle">Dji marvic 3</h3>
+
+                        <img src="img/drone4.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-funds-box-line"></i> 500 km/h
+                            </div>
+
+                            <div class="popular__data-group">
+                                <i class="ri-battery-line"></i> 5 Hours
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price">$120,000</h3>
+                        <button class="button popular__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="popular__droned swiper-slide">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="popular__title">DJI</h1>
+                        <h3 class="popular__subtitle">Dji marvic 3</h3>
+
+                        <img src="img/droneorange01.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-funds-box-line"></i> 500 km/h
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-battery-line"></i> 5 Hours
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price">$120,000</h3>
+                        <button class="button popular__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="popular__droned swiper-slide">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="popular__title">DJI</h1>
+                        <h3 class="popular__subtitle">Dji marvic 3</h3>
+
+                        <img src="img/droneblue02.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-funds-box-line"></i> 500 km/h
+                            </div>
+
+                            <div class="popular__data-group">
+                                <i class="ri-battery-line"></i> 5 Hours
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price">$120,000</h3>
+                        <button class="button popular__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="popular__droned swiper-slide">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="popular__title">DJI</h1>
+                        <h3 class="popular__subtitle">Dji marvic 3</h3>
+
+                        <img src="img/dronered01.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-funds-box-line"></i> 500 km/h
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-battery-line"></i> 5 Hours
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price">$120,000</h3>
+                        <button class="button popular__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="popular__droned swiper-slide">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="popular__title">DJI</h1>
+                        <h3 class="popular__subtitle">Dji marvic 3</h3>
+                        <img src="img/droneyellow02.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-funds-box-line"></i> 500 km/h
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-battery-line"></i> 5 Hours
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price">$120,000</h3>
+                        <button class="button popular__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+        <section class="features section">
+            <h2 class="section__title">
+                More Features
+            </h2>
+
+            <div class="features__container  grid">
+                <img src="img/drone1.gif" alt="" class="features__img">
+                <div class="features__group">
+                    <div class="features__droned features__droned-1">
+                        <h3 class="features__droned-title">4K/60fps</h3>
+                        <p class="features__droned-description">Ultra-clear Video</p>
+                    </div>
+
+                    <div class="features__droned features__droned-2">
+                        <h3 class="features__droned-title">1/2-inch</h3>
+                        <p class="features__droned-description">Image Sensor</p>
+                    </div>
+
+                    <div class="features__droned features__droned-3">
+                        <h3 class="features__droned-title">14-Core</h3>
+                        <p class="features__droned-description">Intel Processor</p>
+                    </div>
+                </div>
+                <!-- <model-viewer src="scene.gltf" alt="A 3D model of a drone" shadow-intensity="1" camera-controls auto-rotate ar > -->
+                <!-- </model-viewer> -->
+            </div>
+        </section>
+
+        <section class="featured section" id="featured">
+            <h2 class="section__title">
+                Featured Drones
+            </h2>
+
+            <div class="featured__container container">
+                <ul class="featured__filters">
+                    <li>
+                        <button class="featured__item it" data-filter="all">
+                            <span>All</span>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="featured__item item1" data-filter=".red">
+                            
+                        </button>
+                        
+                    </li>
+
+                    <li>
+                        <button class="featured__item item2" data-filter=".white">
+                            
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="featured__item item3" data-filter=".yellow">
+                            
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="featured__item item4" data-filter=".orange">
+                            
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="featured__item item5" data-filter=".blue">
+                            
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="featured__content grid">
+                    <article class="featured__droned mix red">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+
+                        <img src="img/dronespark1.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+                     
+                    <article class="featured__droned mix white">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+                        <img src="img/droneryzetello.png" alt="" class="featured__img">
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="featured__droned mix orange">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+
+                        <img src="img/droneorange02.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+                 
+                   
+                    <article class="featured__droned mix red">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+
+                        <img src="img/dronered04.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+                    <article class="featured__droned mix orange">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+
+                        <img src="img/droneorange03.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+                    <article class="featured__droned mix red">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+
+                        <img src="img/dronered01.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="featured__droned mix white">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+
+                        <img src="img/dronespark2.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="featured__droned mix red">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+
+                        <img src="img/dronered.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+                    <article class="featured__droned mix white">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+                        <img src="img/dronewhite01.png" alt="" class="featured__img">
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="featured__droned mix white">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+                        <img src="img/drone4.png" alt="" class="featured__img">
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="featured__droned mix yellow">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+                        <img src="img/droneyellow02.png" alt="" class="featured__img">
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+                    <article class="featured__droned mix yellow">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+                        <img src="img/droneyellow03.png" alt="" class="featured__img">
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+
+
+                    <article class="featured__droned mix blue">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+
+                        <img src="img/droneblue02.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="featured__droned mix orange">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+
+                        <img src="img/droneorange04.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+                    <article class="featured__droned mix blue">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+
+                        <img src="img/droneblue04.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+                    
+                   
+                    <article class="featured__droned mix red">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+
+                        <img src="img/dronered03.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+                  
+                   
+                    <article class="featured__droned mix orange">
+                        <div class="shap shape__smaller"></div>
+
+                        <h1 class="featured__title">DJI</h1>
+                        <h3 class="featured__subtitle">Dji marvic 3</h3>
+
+                        <img src="img/droneorange01.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$120,000</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section> 
+
+
+        <section class="offer section">
+            <div class="offer__container container grid">
+                <div class="offer__bg"></div>
+                <div class="offer__data">
+                    <h2 class="section__title offer__title">
+                        Would You Like To <br> Receive Special Offers?
+                    </h2>
+                    <p class="offer__description">
+                        Subscribe to our mailing list to receive all 
+                        information about our new products and future benefits.
+                    </p>
+                    <a href="#" class="button">
+                        Subscribe
+                    </a>
+                </div>
+                <img src="img/dronespark.png" alt="" class="offer__img">
+            </div>
+        </section>
+
+
+        <footer class="footer section">
+            <div class="shape shape__big"></div>
+            <div class="shape shape__small"></div>
+
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <img src="img/dronelogg.png" alt="">
+                        Drone
+                    </a>
+                    <p class="footer__description">
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. <br> Illum veniam qui iusto quaerat
+                         commodi quae, possimus nihil, adipisci, <br> quia est inventore?
+                    </p>
+                </div>
+
+                <div class="footer__content container">
+                    <h3 class="footer__title">
+                        Company
+                    </h3>
+    
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">About us</a>
+                        </li>
+    
+                        <li>
+                            <a href="#" class="footer__link">products</a>
+                        </li>
+    
+                        <li>
+                            <a href="#" class="footer__link">Shop</a>
+                        </li>
+    
+                    </ul>
+                </div>
+                
+    
+                <div class="footer__content container">
+                    <h3 class="footer__title">
+                        Information
+                    </h3>
+    
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Services</a>
+                        </li>
+    
+                        <li>
+                            <a href="#" class="footer__link">Contact us</a>
+                        </li>
+    
+                        <li>
+                            <a href="#" class="footer__link">Find a dealer</a>
+                        </li>
+                    </ul>
+                </div>
+            
+    
+                <div class="footer__content container">
+                    <h3 class="footer__title">
+                        Follow us
+                    </h3>
+    
+                    <ul class="footer__social">
+                       <a href="#" target="_blank" class="footer__social-links">
+                            <i class="ri-facebook-fill"></i>
+                       </a>
+    
+                        <a href="#" target="_blank" class="footer__social-links">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+    
+                        <a href="#" target="_blank" class="footer__social-links">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            
+        
+
+            <div class="footer__copy container">
+                &#169; dev_nuel All rights reserved
+            </div>
+
+        </footer>
+
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+    </main>
+
+
+
+
+    <script src="scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="mixitup.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
